@@ -3,6 +3,26 @@
   * Copyright 2011-2021 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
   */
+
+
+
+
+const slider = new A11YSlider(document.querySelector(".slider"), {
+    adaptiveHeight: false,
+    dots: true,
+    centerMode: true,
+    arrows: false,
+    responsive: {
+        480: {
+            dots: false, // dots enabled 1280px and up
+        },
+    },
+});
+/*
+ * Added
+ */
+
+
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('@popperjs/core')) :
   typeof define === 'function' && define.amd ? define(['@popperjs/core'], factory) :

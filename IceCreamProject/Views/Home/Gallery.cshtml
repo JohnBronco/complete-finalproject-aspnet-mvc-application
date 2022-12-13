@@ -1,8 +1,37 @@
 ﻿
 @{
     ViewData["Title"] = "Gallery";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    //Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Gallery</h1>
-<p>Pictures of IceCream wow!</p>
+<body>
+    <header class="primary-header">
+        <div class="container">
+            <h1 class="fs-primary-heading fw-bold text-center">
+                Reviews
+            </h1>
+            <p class="text-center">
+                Show your gratitude to the creators of your treat!
+            </p>
+            <button class="button">Create Review</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="padding-block-700  text-center">
+            <h2 class="fs-secondary-heading fw-bold">Customer Reviews</h2>
+            <ul>
+                <li>
+                    <img src="Images/RollReview.jpg" alt="">
+
+                    <div>
+                        <h4 class="fw-bold">John Smith</h4>
+                        <p data-width="wide">
+                            “The rolls were very wonderful to watch being created and delicious to eat!”
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+</body>
